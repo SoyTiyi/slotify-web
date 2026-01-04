@@ -55,7 +55,7 @@ const features: FeatureProps[] = [
 
 const Features = () => {
   return (
-    <div className="text-white">
+    <div className="flex flex-col items-center text-center text-white">
       <h2>Todo lo que necesitas para crecer</h2>
       <p>
         Automatiza las tareas repetitivas y enfócate en lo que realmente

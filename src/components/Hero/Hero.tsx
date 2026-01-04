@@ -1,19 +1,19 @@
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center text-center text-white gap-8 py-24">
-      <div className="flex text-primary bg-primary/10 rounded-full px-4 py-2 items-center border-primary border">
-        <div className="w-2 h-2 bg-primary rounded-full mr-2" />
+    <div className="flex flex-col items-center text-center text-white gap-8 py-24 mx-6 md:mx-12 lg:mx-24">
+      <div className="flex text-primary bg-primary/10 rounded-full px-3 py-1 text-xs md:px-4 md:py-2 md:text-primary items-center border-primary border">
+        <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-primary rounded-full mr-1.5 md:mr-2" />
         <p className="font-medium">Nuevo: Integracion con Whatsapp Business</p>
       </div>
 
-      <h1 className="text-8xl font-bold">
+      <h1 className="text-6xl md:text-8xl font-bold">
         Gestiona tus turnos <br />
         <b className="font-bold text-primary bg-gradient-to-r from-primary to-accent-highlight bg-clip-text text-transparent">
           sin caos.
         </b>
       </h1>
 
-      <p className="font-normal text-text-secondary text-2xl">
+      <p className="font-normal text-text-secondary text-lg md:text-2xl">
         Calendario, Clientes, recordatorios automaticos y pagos en line. Todo lo
         que
         <br />

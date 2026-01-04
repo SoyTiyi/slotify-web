@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import ProductPreview from "./components/ProductPreview/ProductPreview";
 import Features from "./components/Features/Features";
+import Companies from "./components/Companies/Companies";
 
 export function App() {
   return (
@@ -10,6 +11,7 @@ export function App() {
       <Navbar />
       <Hero />
       <ProductPreview />
+      <Companies />
       <Features />
     </div>
   );

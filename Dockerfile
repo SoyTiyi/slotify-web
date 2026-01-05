@@ -16,7 +16,8 @@ RUN cd /temp/prod && bun install --production
 # Copiar node_modules de las dependencias de desarrollo y construir la aplicación
 FROM base AS prerelease
 COPY --from=install /temp/dev/node_modules node_modules
-COPY . .
+COPY package.json bun.lock tsconfig.json bunfig.toml build.ts ./
+COPY src ./src
 
 # Construir la aplicación
 ENV NODE_ENV=production

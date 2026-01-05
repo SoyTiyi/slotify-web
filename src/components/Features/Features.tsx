@@ -55,7 +55,7 @@ const features: FeatureProps[] = [
 
 const Features = () => {
   return (
-    <div className="flex flex-col items-center text-center text-white gap-6 p-8">
+    <section id="feature" className="flex flex-col items-center text-center text-white gap-6 p-8">
       <h2 className="text-4xl font-semibold">Todo lo que necesitas para crecer</h2>
       <p className="text-lg text-muted font-medium">
         Automatiza las tareas repetitivas y enfócate en lo que realmente
@@ -71,7 +71,7 @@ const Features = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

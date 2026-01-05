@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Industries = () => {
   return (
-    <div className="flex flex-col bg-surface md:flex-row justify-between items-center gap-24 px-6 py-12 md:px-12 lg:px-24">
+    <section id="industry" className="flex flex-col bg-surface md:flex-row justify-between items-center gap-24 px-6 py-12 md:px-12 lg:px-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-auto">
         <IndustryCard
           imageSrc={barberPhoto}
@@ -65,7 +65,7 @@ const Industries = () => {
           <FaArrowRightLong className="ml-2" />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

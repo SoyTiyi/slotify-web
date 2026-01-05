@@ -11,10 +11,10 @@ export type Link = {
 }
 
 const links: Link[] = [
-    { id: 1, href: '#products', label: 'Productos' },
-    { id: 2, href: '#price', label: 'Precios' },
-    { id: 3, href: '#security', label: 'Seguridad' },
-    { id: 4, href: '#contact', label: 'Contacto' },
+    { id: 1, href: '#product', label: 'Productos' },
+    { id: 2, href: '#feature', label: 'Características' },
+    { id: 3, href: '#industry', label: 'Industria' },
+    { id: 4, href: '#price', label: 'Precios' },
 ]; 
 
 const Navbar = () => {

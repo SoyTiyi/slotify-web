@@ -50,7 +50,7 @@ const pricePlans: PricePlan[] = [
 
 const Prices = () => {
     return(
-        <div className="flex flex-col items-center text-center text-white mt-24  gap-6 px-4">
+        <section id="prices" className="flex flex-col items-center text-center text-white mt-24  gap-6 px-4">
             <h3 className="text-5xl font-semibold">Planes simples y transparentes</h3>
             <p className="text-2xl text-muted mt-2">Prueba cualquiera de nuestros planes gratis por 14 días. Sin tarjeta de crédito.</p>
 
@@ -67,7 +67,7 @@ const Prices = () => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

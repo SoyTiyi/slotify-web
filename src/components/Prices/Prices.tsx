@@ -6,51 +6,55 @@ interface PricePlan {
     description: string;
     benefits: string[];
     isMostPopular?: boolean;
+    buttonText?: string;
 }
 
 const pricePlans: PricePlan[] = [
     {
         title: "Starter",
-        price: "$10/mes",
-        description: "Ideal para profesionales individuales",
+        price: "29",
+        description: "Ideal para profesionales independientes.",
         benefits: [
-            "1 Usuario",
-            "Hasta 100 sitas al mes",
-            "Recordatorios por email"
-        ]
+            "1 usuario",
+            "Hasta 100 citas/mes",
+            "Recordatorios por Email"
+        ],
+        buttonText: "Comenzar"
     },
     {
         title: "Profesional",
-        price: "$30/mes",
-        description: "Para negocios en crecimiento",
+        price: "59",
+        description: "Para negocios en crecimiento.",
         benefits: [
-            "Hasta 10 usuarios",
+            "Hasta 5 usuarios",
             "Citas ilimitadas",
-            "Recordatorios por email y WhatsApp",
+            "Recordatorios por WhatsApp",
             "Pagos online"
         ],
-        isMostPopular: true
+        isMostPopular: true,
+        buttonText: "Comenzar prueba gratis"
     },
     {
         title: "Business",
-        price: "$59/mes",
-        description: "Para grandes equipos y empresas",
+        price: "99",
+        description: "Para grandes equipos y cadenas.",
         benefits: [
             "Usuarios ilimitados",
-            "Soporte dedicado 24/7",
-            "Acceso a API",
-            "Reportes personalizados y avanzados"
-        ]
+            "API Access",
+            "Soporte prioritario 24/7",
+            "Reportes avanzados"
+        ],
+        buttonText: "Contactar ventas"
     }
 ];
 
 const Prices = () => {
     return(
-        <div>
-            <h3>Planes</h3>
-            <p>Tiempos de prueba de 15 dias para cada plan, pruebas el producto primero antes de pagar por el.</p>
+        <div className="flex flex-col items-center text-center text-white mt-24  gap-6 px-4">
+            <h3 className="text-5xl font-semibold">Planes simples y transparentes</h3>
+            <p className="text-2xl text-muted mt-2">Prueba cualquiera de nuestros planes gratis por 14 días. Sin tarjeta de crédito.</p>
 
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12 w-full max-w-7xl">
                 {pricePlans.map((plan) => (
                     <PriceCard
                         key={plan.title}
@@ -59,6 +63,7 @@ const Prices = () => {
                         description={plan.description}
                         benefiets={plan.benefits}
                         isMostPopular={plan.isMostPopular}
+                        buttonText={plan.buttonText}
                     />
                 ))}
             </div>

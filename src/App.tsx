@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import ProductPreview from "./components/ProductPreview/ProductPreview";
 import Features from "./components/Features/Features";
 import Companies from "./components/Companies/Companies";
+import Industries from "./components/Industries/Industries";
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
       <ProductPreview />
       <Companies />
       <Features />
+      <Industries />
     </div>
   );
 }

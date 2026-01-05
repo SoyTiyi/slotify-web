@@ -1,8 +1,19 @@
+import barberPhoto from "../../assets/barber.png";
+import clinicPhoto from "../../assets/clinic.png";
+import spaPhoto from "../../assets/spa.png";
+import gymPhoto from "../../assets/gym.png";
+
 const Industries = () => {
   return (
     <div>
       <div>
+        <div>
+
+        </div>
         
+        <div>
+          
+        </div>
       </div>
 
       <div className="flex flex-col text-white">

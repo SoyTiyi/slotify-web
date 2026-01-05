@@ -6,6 +6,7 @@ import Features from "./components/Features/Features";
 import Companies from "./components/Companies/Companies";
 import Prices from "./components/Prices/Prices";
 import Industries from "./components/Industries/Industries";
+import Footer from "./components/Footer/Footer";
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
       <Features />
       <Industries />
       <Prices />
+      <Footer />
     </div>
   );
 }

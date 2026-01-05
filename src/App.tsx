@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import ProductPreview from "./components/ProductPreview/ProductPreview";
 import Features from "./components/Features/Features";
 import Companies from "./components/Companies/Companies";
+import Prices from "./components/Prices/Prices";
 import Industries from "./components/Industries/Industries";
 
 export function App() {
@@ -15,6 +16,7 @@ export function App() {
       <Companies />
       <Features />
       <Industries />
+      <Prices />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import PriceCard from "./PriceCard/PriceCard";
+
 interface PricePlan {
     title: string;
     price: string;
@@ -49,7 +51,16 @@ const Prices = () => {
             <p>Tiempos de prueba de 15 dias para cada plan, pruebas el producto primero antes de pagar por el.</p>
 
             <div>
-
+                {pricePlans.map((plan) => (
+                    <PriceCard
+                        key={plan.title}
+                        title={plan.title}
+                        price={plan.price}
+                        description={plan.description}
+                        benefiets={plan.benefits}
+                        isMostPopular={plan.isMostPopular}
+                    />
+                ))}
             </div>
         </div>
     );
